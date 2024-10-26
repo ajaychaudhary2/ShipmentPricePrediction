@@ -1,0 +1,306 @@
+[2024-10-25 09:21:21,585] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.254:8080
+[2024-10-25 09:21:21,585] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-10-25 09:22:03,045] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 14, in predict_datapoint
+    return render_template("from.html")
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\templates\from.html", line 79, in top-level template code
+    <form action="{{url_for('submit_shipping_details')}}" method="POST">
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'submit_shipping_details'. Did you mean 'predict_datapoint' instead?
+[2024-10-25 09:22:03,105] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:22:03] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-10-25 09:22:03,269] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:22:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-10-25 09:22:05,055] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 14, in predict_datapoint
+    return render_template("from.html")
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\templates\from.html", line 79, in top-level template code
+    <form action="{{url_for('submit_shipping_details')}}" method="POST">
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'submit_shipping_details'. Did you mean 'predict_datapoint' instead?
+[2024-10-25 09:22:05,057] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:22:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-10-25 09:22:05,567] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 14, in predict_datapoint
+    return render_template("from.html")
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\templates\from.html", line 79, in top-level template code
+    <form action="{{url_for('submit_shipping_details')}}" method="POST">
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'submit_shipping_details'. Did you mean 'predict_datapoint' instead?
+[2024-10-25 09:22:05,571] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:22:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-10-25 09:22:05,788] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 14, in predict_datapoint
+    return render_template("from.html")
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\templates\from.html", line 79, in top-level template code
+    <form action="{{url_for('submit_shipping_details')}}" method="POST">
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'submit_shipping_details'. Did you mean 'predict_datapoint' instead?
+[2024-10-25 09:22:05,792] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:22:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-10-25 09:22:05,933] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 14, in predict_datapoint
+    return render_template("from.html")
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\templates\from.html", line 79, in top-level template code
+    <form action="{{url_for('submit_shipping_details')}}" method="POST">
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'submit_shipping_details'. Did you mean 'predict_datapoint' instead?
+[2024-10-25 09:22:05,937] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:22:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-10-25 09:22:06,384] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 14, in predict_datapoint
+    return render_template("from.html")
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\templates\from.html", line 79, in top-level template code
+    <form action="{{url_for('submit_shipping_details')}}" method="POST">
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'submit_shipping_details'. Did you mean 'predict_datapoint' instead?
+[2024-10-25 09:22:06,388] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:22:06] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-10-25 09:29:30,406] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 14, in predict_datapoint
+    return render_template("from.html")
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\templates\from.html", line 79, in top-level template code
+    <form action="{{ url_for('predict_datapoint') }}" method="POST">
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'submit_shipping_details'. Did you mean 'predict_datapoint' instead?
+[2024-10-25 09:29:30,520] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:29:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-10-25 09:29:32,238] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 14, in predict_datapoint
+    return render_template("from.html")
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\templates\from.html", line 79, in top-level template code
+    <form action="{{ url_for('predict_datapoint') }}" method="POST">
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'submit_shipping_details'. Did you mean 'predict_datapoint' instead?
+[2024-10-25 09:29:32,241] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:29:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-10-25 09:29:32,691] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 14, in predict_datapoint
+    return render_template("from.html")
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\templates\from.html", line 79, in top-level template code
+    <form action="{{ url_for('predict_datapoint') }}" method="POST">
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'submit_shipping_details'. Did you mean 'predict_datapoint' instead?
+[2024-10-25 09:29:32,693] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:29:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-10-25 09:29:32,835] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 14, in predict_datapoint
+    return render_template("from.html")
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\templates\from.html", line 79, in top-level template code
+    <form action="{{ url_for('predict_datapoint') }}" method="POST">
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'submit_shipping_details'. Did you mean 'predict_datapoint' instead?
+[2024-10-25 09:29:32,838] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:29:32] "[35m[1mGET / HTTP/1.1[0m" 500 -

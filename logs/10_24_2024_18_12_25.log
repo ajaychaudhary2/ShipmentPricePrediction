@@ -1,0 +1,8 @@
+[2024-10-24 18:12:27,448] 26 root - INFO - Data Ingestion Start
+[2024-10-24 18:12:27,525] 31 root - INFO - I have read the dataset
+[2024-10-24 18:12:27,661] 36 root - INFO - Successfully saved the raw data in the Artifacts folder
+[2024-10-24 18:12:27,662] 39 root - INFO - Performing train-test split
+[2024-10-24 18:12:27,667] 41 root - INFO - Train-test split completed
+[2024-10-24 18:12:27,806] 47 root - INFO - Successfully saved the train and test data in the Artifacts folder
+[2024-10-24 18:12:27,806] 48 root - INFO - Data Ingestion Complete
+[2024-10-24 18:12:28,810] 28 root - ERROR - An error occurred: could not convert string to float: 'See DN-557 (ID#:10663)'

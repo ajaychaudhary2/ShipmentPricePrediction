@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Details Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .clear-both {
+            clear: both;
+        }
+
+        h2 {
+            text-align: center;
+            color: #555;
+        }
+        
+        @media (max-width: 768px) {
+            form {
+                padding: 15px;
+            }
+            input[type="text"], input[type="number"], select {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Shipping Details</h2>
+    <form action="{{ url_for('predict_datapoint') }}" method="POST">
+        <div class="form-group">
+            <label for="shipment_mode">Shipment Mode:</label>
+            <select name="shipment_mode" required>
+                <option value="Air">Air</option>
+                <option value="Truck">Truck</option>
+                <option value="Air Charter">Air Charter</option>
+                <option value="Ocean">Ocean</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select name="country" required>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Haiti">Haiti</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Namibia">Namibia</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Benin">Benin</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Swaziland">Swaziland</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Angola">Angola</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="South Sudan">South Sudan</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Congo, DRC">Congo, DRC</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Mali">Mali</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Togo">Togo</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Libya">Libya</option>
+                <option value="Belize">Belize</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="vendor_inco_term">Vendor INCO Term:</label>
+            <select name="vendor_inco_term" required>
+                <option value="EXW">EXW</option>
+                <option value="FCA">FCA</option>
+                <option value="DDU">DDU</option>
+                <option value="CIP">CIP</option>
+                <option value="DDP">DDP</option>
+                <option value="CIF">CIF</option>
+                <option value="N/A - From RDC">N/A - From RDC</option>
+                <option value="DAP">DAP</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="weight">Weight (in kg):</label>
+            <input type="number" name="weight" step="0.01" placeholder="Enter package weight" required>
+        </div>
+
+        <div class="form-group">
+            <label for="line_item_quantity">Line Item Quantity:</label>
+            <input type="number" name="line_item_quantity" placeholder="Enter line item quantity" required>
+        </div>
+
+        <div class="form-group">
+            <label for="line_item_insurance">Line Item Insurance (USD):</label>
+            <input type="number" name="line_item_insurance" step="0.01" placeholder="Enter line item insurance value" required>
+        </div>
+
+        <div class="form-group">
+            <label for="line_item_value">Line Item Value (USD):</label>
+            <input type="number" name="line_item_value" step="0.01" placeholder="Enter line item value" required>
+        </div>
+
+        <div class="clear-both"></div>
+        <input type="submit" value="Submit Shipping Details">
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+[2024-10-25 09:06:40,887] 26 root - INFO - Data Ingestion Start
+[2024-10-25 09:06:40,936] 31 root - INFO - I have read the dataset
+[2024-10-25 09:06:41,052] 36 root - INFO - Successfully saved the raw data in the Artifacts folder
+[2024-10-25 09:06:41,052] 39 root - INFO - Performing train-test split
+[2024-10-25 09:06:41,056] 41 root - INFO - Train-test split completed
+[2024-10-25 09:06:41,161] 47 root - INFO - Successfully saved the train and test data in the Artifacts folder
+[2024-10-25 09:06:41,161] 48 root - INFO - Data Ingestion Complete
+[2024-10-25 09:06:41,166] 22 root - INFO - Data transformation started
+[2024-10-25 09:06:41,166] 50 root - INFO - Preprocessing pipelines created.
+[2024-10-25 09:06:41,196] 88 root - INFO - Applying preprocessing on train and test datasets
+[2024-10-25 09:06:41,203] 96 root - INFO - Object saved successfully
+[2024-10-25 09:06:41,203] 23 root - INFO - Splitting dependent and independent variables from the transformed data
+[2024-10-25 09:06:41,392] 62 root - INFO - Linear Regression Performance: RMSE=2749.61, MAE=1724.56, R²=62.76%
+[2024-10-25 09:06:41,409] 62 root - INFO - Lasso Performance: RMSE=2749.87, MAE=1724.63, R²=62.75%
+[2024-10-25 09:06:41,424] 62 root - INFO - Ridge Performance: RMSE=2749.73, MAE=1724.75, R²=62.75%
+[2024-10-25 09:06:41,432] 62 root - INFO - ElasticNet Performance: RMSE=3067.38, MAE=2368.24, R²=53.65%
+[2024-10-25 09:06:41,524] 62 root - INFO - Decision Tree Performance: RMSE=3285.96, MAE=1457.96, R²=46.81%
+[2024-10-25 09:06:47,394] 62 root - INFO - Random Forest Performance: RMSE=2434.37, MAE=1132.82, R²=70.81%
+[2024-10-25 09:06:47,394] 70 root - INFO - Best Model Found: Random Forest with R² Score: 70.81%

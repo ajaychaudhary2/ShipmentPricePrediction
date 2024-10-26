@@ -1,0 +1,9 @@
+[2024-10-24 18:03:51,089] 26 root - INFO - Data Ingestion Start
+[2024-10-24 18:03:51,172] 31 root - INFO - I have read the dataset
+[2024-10-24 18:03:51,306] 36 root - INFO - Successfully saved the raw data in the Artifacts folder
+[2024-10-24 18:03:51,306] 39 root - INFO - Performing train-test split
+[2024-10-24 18:03:51,313] 41 root - INFO - Train-test split completed
+[2024-10-24 18:03:51,451] 47 root - INFO - Successfully saved the train and test data in the Artifacts folder
+[2024-10-24 18:03:51,452] 48 root - INFO - Data Ingestion Complete
+[2024-10-24 18:03:51,453] 154 root - ERROR - Error occurred during data transformation
+[2024-10-24 18:03:51,453] 26 root - ERROR - Custom Exception: Error occurred in Python script name [e:\data_science _master\ml\shipment_price_prediction\src\ShipmentPricePrediction\components\data_transformation.py] line number [100] error message ["['id'] not found in axis"]

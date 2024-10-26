@@ -1,0 +1,148 @@
+[2024-10-25 09:48:10,411] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.29.254:8080
+[2024-10-25 09:48:10,412] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-10-25 09:48:15,770] 68 root - INFO - Dataframe gathered
+[2024-10-25 09:48:16,233] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:48:16] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[2024-10-25 09:48:57,324] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 9, in predict_datapoint
+    return render_template("form.html")  # Ensure this template exists
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: form.html
+[2024-10-25 09:48:57,388] 97 werkzeug - INFO - 192.168.29.254 - - [25/Oct/2024 09:48:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-10-25 09:48:57,541] 97 werkzeug - INFO - 192.168.29.254 - - [25/Oct/2024 09:48:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-10-25 09:48:59,275] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 9, in predict_datapoint
+    return render_template("form.html")  # Ensure this template exists
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: form.html
+[2024-10-25 09:48:59,278] 97 werkzeug - INFO - 192.168.29.254 - - [25/Oct/2024 09:48:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-10-25 09:48:59,646] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 9, in predict_datapoint
+    return render_template("form.html")  # Ensure this template exists
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: form.html
+[2024-10-25 09:48:59,649] 97 werkzeug - INFO - 192.168.29.254 - - [25/Oct/2024 09:48:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-10-25 09:49:09,771] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 9, in predict_datapoint
+    return render_template("form.html")  # Ensure this template exists
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: form.html
+[2024-10-25 09:49:09,772] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:49:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-10-25 09:49:11,411] 838 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 9, in predict_datapoint
+    return render_template("form.html")  # Ensure this template exists
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "E:\Data_Science _master\ML\Shipment_price_prediction\env\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: form.html
+[2024-10-25 09:49:11,413] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:49:11] "[35m[1mGET / HTTP/1.1[0m" 500 -

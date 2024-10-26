@@ -1,0 +1,6 @@
+[2024-10-25 09:56:59,337] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-10-25 09:56:59,337] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-10-25 09:57:04,582] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:57:04] "GET / HTTP/1.1" 200 -
+[2024-10-25 09:57:16,881] 68 root - INFO - Dataframe gathered
+[2024-10-25 09:57:17,215] 97 werkzeug - INFO - 127.0.0.1 - - [25/Oct/2024 09:57:17] "[35m[1mPOST / HTTP/1.1[0m" 500 -

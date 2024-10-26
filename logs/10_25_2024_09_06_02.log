@@ -1,0 +1,11 @@
+[2024-10-25 09:06:11,931] 26 root - INFO - Data Ingestion Start
+[2024-10-25 09:06:12,018] 31 root - INFO - I have read the dataset
+[2024-10-25 09:06:12,095] 36 root - INFO - Successfully saved the raw data in the Artifacts folder
+[2024-10-25 09:06:12,095] 39 root - INFO - Performing train-test split
+[2024-10-25 09:06:12,099] 41 root - INFO - Train-test split completed
+[2024-10-25 09:06:12,166] 47 root - INFO - Successfully saved the train and test data in the Artifacts folder
+[2024-10-25 09:06:12,166] 48 root - INFO - Data Ingestion Complete
+[2024-10-25 09:06:12,169] 22 root - INFO - Data transformation started
+[2024-10-25 09:06:12,169] 50 root - INFO - Preprocessing pipelines created.
+[2024-10-25 09:06:12,187] 88 root - INFO - Applying preprocessing on train and test datasets
+[2024-10-25 09:06:12,359] 96 root - INFO - Object saved successfully

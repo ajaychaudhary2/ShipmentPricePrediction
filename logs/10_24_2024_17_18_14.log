@@ -1,0 +1,13 @@
+[2024-10-24 17:18:16,198] 12 root - INFO - Starting data ingestion...
+[2024-10-24 17:18:16,198] 27 root - INFO - Data Ingestion Start
+[2024-10-24 17:18:16,286] 32 root - INFO - I have read the dataset
+[2024-10-24 17:18:16,456] 37 root - INFO - Successfully saved the raw data in the Artifacts folder
+[2024-10-24 17:18:16,456] 40 root - INFO - Performing train-test split
+[2024-10-24 17:18:16,464] 42 root - INFO - Train-test split completed
+[2024-10-24 17:18:16,676] 48 root - INFO - Successfully saved the train and test data in the Artifacts folder
+[2024-10-24 17:18:16,676] 49 root - INFO - Data Ingestion Complete
+[2024-10-24 17:18:16,678] 15 root - INFO - Data ingestion completed.
+[2024-10-24 17:18:16,679] 18 root - INFO - Starting data transformation...
+[2024-10-24 17:18:18,334] 111 root - INFO - Freight cost imputation completed.
+[2024-10-24 17:18:18,339] 128 root - ERROR - Error occurred during data transformation
+[2024-10-24 17:18:18,339] 39 root - ERROR - Error occurred in the training pipeline.
