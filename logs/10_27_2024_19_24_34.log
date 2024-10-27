@@ -1,0 +1,7 @@
+[2024-10-27 19:24:38,336] 97 werkzeug - WARNING -  * Debugger is active!
+[2024-10-27 19:24:38,364] 97 werkzeug - INFO -  * Debugger PIN: 270-055-514
+[2024-10-27 19:24:38,406] 97 werkzeug - INFO - 127.0.0.1 - - [27/Oct/2024 19:24:38] "GET / HTTP/1.1" 200 -
+[2024-10-27 19:24:48,191] 66 root - INFO - Dataframe gathered
+[2024-10-27 19:24:49,098] 97 werkzeug - INFO - 127.0.0.1 - - [27/Oct/2024 19:24:49] "POST / HTTP/1.1" 200 -
+[2024-10-27 19:24:54,958] 97 werkzeug - INFO - 127.0.0.1 - - [27/Oct/2024 19:24:54] "GET / HTTP/1.1" 200 -
+[2024-10-27 19:25:25,657] 97 werkzeug - INFO -  * Detected change in 'E:\\Data_Science _master\\ML\\Shipment_price_prediction\\app.py', reloading
